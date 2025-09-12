@@ -5,7 +5,7 @@ namespace Orders.Backend.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CategoriesController : GenericControllerz<Category>
+public class CategoriesController : GenericController<Category>
 {
     public CategoriesController(UnitsOfWork.Interfaces.IGenericUnitOfWork<Category> unitOfWork) : base(unitOfWork)
     {

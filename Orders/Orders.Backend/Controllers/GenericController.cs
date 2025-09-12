@@ -3,11 +3,11 @@ using Orders.Backend.UnitsOfWork.Interfaces;
 
 namespace Orders.Backend.Controllers;
 
-public class GenericControllerz<T> : Controller where T : class
+public class GenericController<T> : Controller where T : class
 {
     private readonly IGenericUnitOfWork<T> _unitOfWork;
 
-    public GenericControllerz(IGenericUnitOfWork<T> unitOfWork)
+    public GenericController(IGenericUnitOfWork<T> unitOfWork)
     {
         _unitOfWork = unitOfWork;
     }
